@@ -15,6 +15,8 @@
 		139F58982701EC4600AE9E62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139F58962701EC4600AE9E62 /* LaunchScreen.storyboard */; };
 		139F58A027020D9100AE9E62 /* HomeTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139F589F27020D9100AE9E62 /* HomeTableViewHeader.xib */; };
 		139F58A2270210A300AE9E62 /* HomeTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139F58A1270210A300AE9E62 /* HomeTableViewHeader.swift */; };
+		139F58AB2702381300AE9E62 /* ViagemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139F58A92702381300AE9E62 /* ViagemTableViewCell.swift */; };
+		139F58AC2702381300AE9E62 /* ViagemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139F58AA2702381300AE9E62 /* ViagemTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		139F58992701EC4600AE9E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		139F589F27020D9100AE9E62 /* HomeTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewHeader.xib; sourceTree = "<group>"; };
 		139F58A1270210A300AE9E62 /* HomeTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeader.swift; sourceTree = "<group>"; };
+		139F58A92702381300AE9E62 /* ViagemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagemTableViewCell.swift; sourceTree = "<group>"; };
+		139F58AA2702381300AE9E62 /* ViagemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViagemTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 		139F58A527022F0000AE9E62 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				139F58A8270237E800AE9E62 /* Cells */,
 				139F58A627022F6B00AE9E62 /* Header */,
 				139F588F2701EC4500AE9E62 /* ViewController.swift */,
 				139F58912701EC4500AE9E62 /* Main.storyboard */,
@@ -111,6 +116,15 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		139F58A8270237E800AE9E62 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				139F58A92702381300AE9E62 /* ViagemTableViewCell.swift */,
+				139F58AA2702381300AE9E62 /* ViagemTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +188,7 @@
 				139F58A027020D9100AE9E62 /* HomeTableViewHeader.xib in Resources */,
 				139F58952701EC4600AE9E62 /* Assets.xcassets in Resources */,
 				139F58932701EC4500AE9E62 /* Main.storyboard in Resources */,
+				139F58AC2702381300AE9E62 /* ViagemTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				139F58902701EC4500AE9E62 /* ViewController.swift in Sources */,
+				139F58AB2702381300AE9E62 /* ViagemTableViewCell.swift in Sources */,
 				139F58A2270210A300AE9E62 /* HomeTableViewHeader.swift in Sources */,
 				139F588C2701EC4500AE9E62 /* AppDelegate.swift in Sources */,
 				139F588E2701EC4500AE9E62 /* SceneDelegate.swift in Sources */,

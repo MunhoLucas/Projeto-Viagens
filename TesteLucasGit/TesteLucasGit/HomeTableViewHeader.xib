@@ -14,9 +14,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w7W-07-K0w" userLabel="Header View">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w7W-07-K0w" userLabel="Header View">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alura Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jx-Tz-uod">
                             <rect key="frame" x="8" y="29" width="149" height="33"/>
@@ -25,28 +24,50 @@
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oL0-Wv-KzP" userLabel="Banner View">
-                            <rect key="frame" x="20" y="155" width="375" height="130"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oL0-Wv-KzP" userLabel="Banner View">
+                            <rect key="frame" x="20" y="135" width="375" height="130"/>
                             <subviews>
-                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6kc-49-nwz">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="122"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kc-49-nwz">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="130"/>
                                     <color key="backgroundColor" red="0.31764705882352939" green="0.70196078431372544" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </view>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NGn-Oz-fe6">
-                                    <rect key="frame" x="199" y="-6" width="181" height="128"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NGn-Oz-fe6">
+                                    <rect key="frame" x="199" y="0.0" width="176" height="130"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="176" id="ImP-aM-fPk"/>
+                                    </constraints>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="6kc-49-nwz" firstAttribute="width" secondItem="oL0-Wv-KzP" secondAttribute="width" multiplier="0.533333" id="5bk-qW-jlw"/>
+                                <constraint firstAttribute="bottom" secondItem="6kc-49-nwz" secondAttribute="bottom" id="CJj-nk-ym5"/>
+                                <constraint firstItem="NGn-Oz-fe6" firstAttribute="top" secondItem="oL0-Wv-KzP" secondAttribute="top" id="CQE-xc-dRp"/>
+                                <constraint firstAttribute="bottom" secondItem="NGn-Oz-fe6" secondAttribute="bottom" id="NqP-iy-tGj"/>
+                                <constraint firstItem="NGn-Oz-fe6" firstAttribute="width" secondItem="oL0-Wv-KzP" secondAttribute="width" multiplier="0.469333" id="ZJd-cp-E9I"/>
+                                <constraint firstAttribute="height" constant="130" id="kuP-qg-w3J"/>
+                                <constraint firstItem="6kc-49-nwz" firstAttribute="leading" secondItem="oL0-Wv-KzP" secondAttribute="leading" id="pJn-eg-53c"/>
+                                <constraint firstAttribute="trailing" secondItem="NGn-Oz-fe6" secondAttribute="trailing" id="thO-1v-kKX"/>
+                                <constraint firstItem="6kc-49-nwz" firstAttribute="top" secondItem="oL0-Wv-KzP" secondAttribute="top" id="uz8-Tj-9Sf"/>
+                            </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" red="0.11764705882352941" green="0.23137254901960785" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="GzW-3w-jSE"/>
+                        <constraint firstAttribute="bottom" secondItem="oL0-Wv-KzP" secondAttribute="bottom" constant="-15" id="kg0-na-QuM"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oL0-Wv-KzP" secondAttribute="trailing" constant="19" id="XeA-Xa-Okw"/>
+                <constraint firstItem="w7W-07-K0w" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="f0f-d8-812"/>
+                <constraint firstItem="w7W-07-K0w" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qH2-3h-vqV"/>
+                <constraint firstItem="oL0-Wv-KzP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="r1f-Pj-38o"/>
+                <constraint firstItem="w7W-07-K0w" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wsD-dj-gtC"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bannerImageView" destination="NGn-Oz-fe6" id="Pif-QN-h1V"/>

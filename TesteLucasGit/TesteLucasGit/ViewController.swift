@@ -14,10 +14,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    class Pessoa{
-        let nome:String = "Lucas"
-        let idade:Int = 24
-    }
-
+   
 }
 

@@ -14,7 +14,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    var Pessoa: String = "Lucas"
+    let Pessoa: String = "Lucas"
+    
 
 }
 

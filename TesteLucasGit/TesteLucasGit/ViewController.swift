@@ -16,6 +16,7 @@ class ViewController: UIViewController {
 
     class Pessoa{
         let nome:String = "Lucas"
+        let idade:Int = 24
     }
 
 }

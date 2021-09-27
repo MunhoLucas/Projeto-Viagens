@@ -10,7 +10,7 @@ import UIKit
 class ViagemTableViewCell: UITableViewCell {
     
     
-//    MARK: - IBOutlets
+    //    MARK: - IBOutlets
     
     
     @IBOutlet weak var backgroundViewCell: UIView!
@@ -37,7 +37,25 @@ class ViagemTableViewCell: UITableViewCell {
     
     
     
-    func 
+    func configuraCelula(_ viagem: Viagem?){
+        
+        viagemImage.image = UIImage(named: viagem?.asset ?? "")
+        tituloViagemLabel.text = viagem?.titulo
+        subtituloViagemLabel.text = viagem?.subtitulo
+        precoViagemLabel.text = "R$ \(viagem?.preco ?? 0)"
+        
+        let atributoString: NSMutableAttributedString = NSMutableAttributedString(string: "R$ \(viagem?.precoSemDesconto ?? 0)")
+        atributoString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 1, range: NSMakeRange(0, atributoString.length))
+        precoSemDescontoLabel.attributedText = atributoString
+        
+        if let numeroDeDias = viagem?.diaria, let numeroDeHospedes = viagem?.hospedes{
+            let diarias = numeroDeDias == 1 ? "Diaria" : "Diarias"
+            let hospedes = numeroDeHospedes == 1 ? "Pessoa" : "Pessoas"
+            
+            diariaViagemLabel.text = "\(numeroDeDias) \(diarias) - \(numeroDeHospedes) \(hospedes)"
+        }
+        
+    }
     
     
     

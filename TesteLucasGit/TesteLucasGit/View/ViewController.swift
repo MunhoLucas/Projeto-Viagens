@@ -15,9 +15,16 @@ class ViewController: UIViewController {
         
         override func viewDidLoad() {
         super.viewDidLoad()
+        self.configuraTableView()
+        view.backgroundColor = UIColor(red: 30.0/255.0, green: 59.0/255.0, blue: 119.0/255.0, alpha: 1)
+    }
+    
+    func configuraTableView(){
         viagensTableView.dataSource = self
-            viagensTableView.delegate = self
-            view.backgroundColor = UIColor(red: 30.0/255.0, green: 59.0/255.0, blue: 119.0/255.0, alpha: 1)
+        viagensTableView.delegate = self
+        viagensTableView.register(UINib(nibName: "ViagemTableViewCell", bundle: nil), forCellReuseIdentifier: "ViagemTableViewCell")
+        
+        
     }
 
 }
@@ -29,11 +36,13 @@ extension ViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         
-        cell.textLabel?.text = "Viagem \(indexPath.row)"
+        guard let celulaViagem = tableView.dequeueReusableCell(withIdentifier: "ViagemTableViewCell") as? ViagemTableViewCell else {
+            fatalError("Erro to create ViagemTableViewCell")
+        }
         
-        return cell
+        
+        return celulaViagem
     }
     
 }
@@ -54,5 +63,8 @@ extension ViewController: UITableViewDelegate{
         return 300
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 400
+    }
     
 }

@@ -29,9 +29,31 @@
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kc-49-nwz">
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="130"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aproveite o verao, com:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXQ-Tp-CWB">
+                                            <rect key="frame" x="16" y="14" width="168" height="62"/>
+                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="22"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ofertas exclusivas, somente no nosso app" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIm-fe-279">
+                                            <rect key="frame" x="16" y="82" width="168" height="34"/>
+                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" red="0.31764705882352939" green="0.70196078431372544" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="aXQ-Tp-CWB" secondAttribute="trailing" constant="16" id="L9S-VV-sZX"/>
+                                        <constraint firstAttribute="trailing" secondItem="VIm-fe-279" secondAttribute="trailing" constant="16" id="U96-q8-fXg"/>
+                                        <constraint firstItem="aXQ-Tp-CWB" firstAttribute="leading" secondItem="6kc-49-nwz" secondAttribute="leading" constant="16" id="aXN-8R-nNz"/>
+                                        <constraint firstItem="aXQ-Tp-CWB" firstAttribute="top" secondItem="6kc-49-nwz" secondAttribute="top" constant="14" id="gqf-R2-Pox"/>
+                                        <constraint firstAttribute="bottom" secondItem="VIm-fe-279" secondAttribute="bottom" constant="14" id="pgQ-p4-Yyu"/>
+                                        <constraint firstItem="VIm-fe-279" firstAttribute="leading" secondItem="6kc-49-nwz" secondAttribute="leading" constant="16" id="xbB-Fu-DmG"/>
+                                    </constraints>
                                 </view>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NGn-Oz-fe6">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferias" translatesAutoresizingMaskIntoConstraints="NO" id="NGn-Oz-fe6">
                                     <rect key="frame" x="199" y="0.0" width="176" height="130"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="176" id="ImP-aM-fPk"/>
@@ -78,6 +100,7 @@
         </view>
     </objects>
     <resources>
+        <image name="ferias" width="988" height="1364"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

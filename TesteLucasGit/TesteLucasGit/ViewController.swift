@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         override func viewDidLoad() {
         super.viewDidLoad()
         viagensTableView.dataSource = self
-        
+            viagensTableView.delegate = self
     }
 
 }
@@ -34,6 +34,12 @@ extension ViewController: UITableViewDataSource{
         
         return cell
     }
+    
+}
+
+extension ViewController: UITableViewDelegate{
+    
+    
     
     
 }
